@@ -81,6 +81,8 @@ which is a reflection across 1/2Vs from the charging equation, meaning that the 
 {Vc=1/3Vs:t=~1.1RC}
 {Vc=2/3Vs:t=~.4RC}
 
+----
+
 3.Comparator
 Now that we have gone through the nessacary passive components, it is time to analyze the active section of the chip. 
 The comparator is a special type of op amp, wih its charetoristics choosen to act fully in the saturation range. 
