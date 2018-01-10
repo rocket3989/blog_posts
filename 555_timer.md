@@ -55,7 +55,7 @@ Current is the rate of charge flow over time, so
 This is first order differential equation, with the inital value of `Q = 0 at t=0`. solving this, the general solution is 
 >Vc = Vs(1-e^(-t/RC))
 
-![alt-text](/images/555_timer1.gif)
+![alt-text](/images/555_timer1.svg)
 
 This can now be solved for so general values, such as this time it takes the capacitor to reach 1/3 and 2/3 supply voltage. 
 >Vc = 1/3 Vs
