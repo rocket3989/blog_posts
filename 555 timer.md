@@ -34,6 +34,8 @@ now we can apply the relationship again to find the voltage potential over R2, a
 
 Now we have created a voltage divider! The voltage seen by R2 will be proportional to the two resistor values, and if they are equal, it will be 1/2 the supply voltage
 
+-----
+
 ## Capacitors
 Capacitors are the second fundamental passive circuit element. It is a device that stores and releases electric charge, depending on the voltage
 difference across its terminals. The voltage difference between the plates of the capacitor (V) is proportional to the charge on the plates (Q), and the capacitace (C)
