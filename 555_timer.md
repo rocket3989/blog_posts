@@ -52,7 +52,7 @@ Using this rule, we can breakdown what happens when a capactior charges
 ![capacitor chargine circuit](/images/555_timer_pic2.svg)
 
 
-When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor volatage, represented by IR, and the capacitor voltage, Q/C
+When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor volatage, represented by IR, and the capacitor voltage, Q/C. These values must sum to 0, so they can be expressed in the following equation
 
 ![equation](/images/555_timer6.svg)
 
@@ -61,7 +61,7 @@ Current is the rate of charge flow over time, so
 
 ![equation](/images/555_timer7.svg)
 
-This is first order differential equation, with the inital value of `Q = 0 at t=0`. solving this, the general solution is 
+This is first order differential equation, with the inital value of `Q = 0 at t = 0`. solving this, the general solution is 
 
 ![equation](/images/555_timer8.svg)
 
@@ -77,27 +77,29 @@ This can now be solved for some general values, such as this time it takes the c
 
 So a capacitor charging through a resistor will charge to 1/3 of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is a consistant an measurable process. Applying the above manipulation to 2/3 supply voltage,
 
->Vc = 1/3 Vs
+![equation](/images/555_timer13.svg)
 
->1/3 = (1-e^(-t/RC))
+![equation](/images/555_timer14.svg)
 
->-t/RC = ln(2/3)
+![equation](/images/555_timer15.svg)
 
->t =~ .4 RC
-
-> similarly for Vc = 2/3Vs, 
-
->-t/RC = ln(1/3)
-
->t =~ 1.1 RC
 
 Discharging a capacitor follows a similar pattern as charging, with this circuit being considered instead
-{discharging capacitor circuit}
+
+![equation](/images/555_timer_pic3.svg)
+
 The diffential equation works out to be 
-{R(dQ/dt)+Q/C = 0}
-with boundary condition Vc = Vs at t=0, leading to 
-{Vc = Vs(e^(-t/RC))}
-which is a reflection across 1/2Vs from the charging equation, meaning that the derived values for charge and discharge are simply opposites,
+
+![equation](/images/555_timer16.svg)
+
+with boundary condition `Vc = Vs at t=0`, leading to 
+
+![equation](/images/555_timer17.svg)
+
+which is a reflection across 1/2 Vs from the charging equation, meaning that the derived values for charge and discharge are simply opposites,
+
+![equation](/images/555_timer18.svg)
+
 {Vc=1/3Vs:t=~1.1RC}
 {Vc=2/3Vs:t=~.4RC}
 
