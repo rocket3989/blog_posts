@@ -51,6 +51,7 @@ Using this rule, we can breakdown what happens when a capactior charges
 
 ![capacitor chargine circuit](/images/555_timer_pic2.svg)
 
+
 When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor volatage, represented by IR, and the capacitor voltage, Q/C
 
 ![equation](/images/555_timer6.svg)
