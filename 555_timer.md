@@ -65,7 +65,7 @@ This is first order differential equation, with the inital value of `Q = 0 at t 
 
 ![equation](/images/555_timer8.svg)
 
-This can now be solved for some general values, such as this time it takes the capacitor to reach 1/3 and 2/3 supply voltage by equating `Vc = 1/3 Vs`
+This can now be solved for some general values, such as this time it takes the capacitor to reach a third of supply voltage by equating `Vc = 1/3 Vs`
 
 ![equation](/images/555_timer9.svg)
 
@@ -75,7 +75,7 @@ This can now be solved for some general values, such as this time it takes the c
 
 ![equation](/images/555_timer12.svg)
 
-So a capacitor charging through a resistor will charge to 1/3 of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is a consistant an measurable process. Applying the above manipulation to 2/3 supply voltage,
+So a capacitor charging through a resistor will charge to one third of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is a consistant and measurable process. Applying the above manipulation to two thirds supply voltage,
 
 ![equation](/images/555_timer13.svg)
 
