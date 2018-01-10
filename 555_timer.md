@@ -75,7 +75,7 @@ This can now be solved for some general values, such as this time it takes the c
 
 ![equation](/images/555_timer12.svg)
 
-So a capacitor charging through a resistor will charge to 2/3 of the supply voltage in 1.1 times the constant RC. This value, RC is 
+So a capacitor charging through a resistor will charge to 1/3 of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is 
 
 >Vc = 1/3 Vs
 
