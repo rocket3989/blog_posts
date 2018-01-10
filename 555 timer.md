@@ -12,7 +12,7 @@ understand the chip, first the underlying theory of each internal companant, and
 The most simple and funtamental electronic device is the passive componant, the resistor. On the first day of any introductory electronics course, one 
 will learn the relationship
 
->V = IR.
+>V = IR
 
 This equation relates three fundament concepts in electronics: Voltage- the potential of electrons to do work,
 Current- the rate at which charge flows, and Resistance- the load that charge is pushed through. Resistors can be combined to change how they
