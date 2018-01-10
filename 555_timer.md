@@ -34,8 +34,6 @@ Through the two resistors, a current I will flow, determined by the resistance s
 
 now we can apply the relationship again to find the voltage potential over R2, and find that 
 
->VR2 = V(R2/R1+R2)
-
 ![equation](/images/555_timer4.svg)
 
 Now we have created a voltage divider! The voltage seen by R2 will be proportional to the two resistor values, and if they are equal, it will be 1/2 the supply voltage
@@ -45,25 +43,31 @@ Now we have created a voltage divider! The voltage seen by R2 will be proportion
 ## Capacitors
 Capacitors are the second fundamental passive circuit element. It is a device that stores and releases electric charge, depending on the voltage
 difference across its terminals. The voltage difference between the plates of the capacitor (V) is proportional to the charge on the plates (Q), and the capacitace (C)
->V=Q/C
+
 ![equation](/images/555_timer5.svg)
 
 A fundamental rule in electronics is Kirkoff's voltage law, which states that the voltages across components in a loop of a circuit must sum to 0.
 Using this rule, we can breakdown what happens when a capactior charges
+
 {charging capacitor circuit}
+![equation](/images/555_timer5 .svg)
+
 When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor volatage, represented by IR, and the capacitor voltage, Q/C
->Vs = IR + Q/C
+
+![equation](/images/555_timer6.svg)
 
 Current is the rate of charge flow over time, so
 `I = dQ/dT` Which can be substituted into the equation, giving
 
->Vs = R(dQ/dt) + Q/C
+![equation](/images/555_timer7.svg)
 
 This is first order differential equation, with the inital value of `Q = 0 at t=0`. solving this, the general solution is 
 
 ![equation](/images/555_timer8.svg)
 
 This can now be solved for so general values, such as this time it takes the capacitor to reach 1/3 and 2/3 supply voltage. 
+
+![equation](/images/555_timer5.svg)
 >Vc = 1/3 Vs
 
 >1/3 = (1-e^(-t/RC))
