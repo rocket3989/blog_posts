@@ -25,7 +25,7 @@ resistance of the new circuit is
 
 ![equation](/images/555_timer2.svg)
 
-Now, if we take that knowledge, and the relationship V=IR, we can construct the most simple circuit in electronics
+Now, if we take that knowledge, and the relationship `V=IR`, we can construct the most simple circuit in electronics
 {voltage divider pic}
 Through the two resistors, a current I will flow, determined by the resistance seen by the voltage source, which we know to be `R1+R2`. Therefore,
 
