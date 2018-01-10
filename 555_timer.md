@@ -17,8 +17,8 @@ will learn the relationship
 This equation relates three fundament concepts in electronics: Voltage- the potential of electrons to do work,
 Current- the rate at which charge flows, and Resistance- the load that charge is pushed through. Resistors can be combined to change how they
 influnce a circuit. One such combination is series resistance
-{series resistance pic}
-![equation](/images/555_timer.svg)
+
+![equation](/images/555_timer_pic1.svg)
 
 when resistors are connected one after another like this, their resistances are combined by adding them together. In this case, the equivalent 
 resistance of the new circuit is 
@@ -75,7 +75,7 @@ This can now be solved for some general values, such as this time it takes the c
 
 ![equation](/images/555_timer12.svg)
 
-So a capacitor charging through a resistor will charge to 1/3 of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is 
+So a capacitor charging through a resistor will charge to 1/3 of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is a consistant an measurable process. Applying the above manipulation to 2/3 supply voltage,
 
 >Vc = 1/3 Vs
 
