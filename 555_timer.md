@@ -100,8 +100,7 @@ which is a reflection across 1/2 Vs from the charging equation, meaning that the
 
 ![equation](/images/555_timer18.svg)
 
-{Vc=1/3Vs:t=~1.1RC}
-{Vc=2/3Vs:t=~.4RC}
+![equation](/images/555_timer19.svg)
 
 ----
 
