@@ -49,8 +49,7 @@ difference across its terminals. The voltage difference between the plates of th
 A fundamental rule in electronics is Kirkoff's voltage law, which states that the voltages across components in a loop of a circuit must sum to 0.
 Using this rule, we can breakdown what happens when a capactior charges
 
-{charging capacitor circuit}
-![equation](/images/555_timer5 .svg)
+![capacitor chargine circuit](/images/555_timer_pic2.svg)
 
 When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor volatage, represented by IR, and the capacitor voltage, Q/C
 
