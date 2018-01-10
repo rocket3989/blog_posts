@@ -65,9 +65,18 @@ This is first order differential equation, with the inital value of `Q = 0 at t=
 
 ![equation](/images/555_timer8.svg)
 
-This can now be solved for so general values, such as this time it takes the capacitor to reach 1/3 and 2/3 supply voltage. 
+This can now be solved for some general values, such as this time it takes the capacitor to reach 1/3 and 2/3 supply voltage by equating `Vc = 1/3 Vs`
 
-![equation](/images/555_timer5.svg)
+![equation](/images/555_timer9.svg)
+
+![equation](/images/555_timer10.svg)
+
+![equation](/images/555_timer11.svg)
+
+![equation](/images/555_timer12.svg)
+
+So a capacitor charging through a resistor will charge to 2/3 of the supply voltage in 1.1 times the constant RC. This value, RC is 
+
 >Vc = 1/3 Vs
 
 >1/3 = (1-e^(-t/RC))
