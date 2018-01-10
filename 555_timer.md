@@ -12,25 +12,31 @@ understand the chip, first the underlying theory of each internal companant, and
 The most simple and funtamental electronic device is the passive componant, the resistor. On the first day of any introductory electronics course, one 
 will learn the relationship
 
->V = IR
+![equation](/images/555_timer1.svg)
 
 This equation relates three fundament concepts in electronics: Voltage- the potential of electrons to do work,
 Current- the rate at which charge flows, and Resistance- the load that charge is pushed through. Resistors can be combined to change how they
 influnce a circuit. One such combination is series resistance
 {series resistance pic}
-
+![equation](/images/555_timer.svg)
 
 when resistors are connected one after another like this, their resistances are combined by adding them together. In this case, the equivalent 
 resistance of the new circuit is 
->R = R1+R2
+
+![equation](/images/555_timer2.svg)
 
 Now, if we take that knowledge, and the relationship V=IR, we can construct the most simple circuit in electronics
 {voltage divider pic}
-Through the two resistors, a current I will flow, determined by the resistance seen by the voltage source, which we know to be R1+R2. Therefore,
->I=V/R1+R2
+Through the two resistors, a current I will flow, determined by the resistance seen by the voltage source, which we know to be `R1+R2`. Therefore,
+
+
+![equation](/images/555_timer3.svg)
 
 now we can apply the relationship again to find the voltage potential over R2, and find that 
+
 >VR2 = V(R2/R1+R2)
+
+![equation](/images/555_timer4.svg)
 
 Now we have created a voltage divider! The voltage seen by R2 will be proportional to the two resistor values, and if they are equal, it will be 1/2 the supply voltage
 
@@ -40,6 +46,7 @@ Now we have created a voltage divider! The voltage seen by R2 will be proportion
 Capacitors are the second fundamental passive circuit element. It is a device that stores and releases electric charge, depending on the voltage
 difference across its terminals. The voltage difference between the plates of the capacitor (V) is proportional to the charge on the plates (Q), and the capacitace (C)
 >V=Q/C
+![equation](/images/555_timer5.svg)
 
 A fundamental rule in electronics is Kirkoff's voltage law, which states that the voltages across components in a loop of a circuit must sum to 0.
 Using this rule, we can breakdown what happens when a capactior charges
@@ -53,9 +60,8 @@ Current is the rate of charge flow over time, so
 >Vs = R(dQ/dt) + Q/C
 
 This is first order differential equation, with the inital value of `Q = 0 at t=0`. solving this, the general solution is 
->Vc = Vs(1-e^(-t/RC))
 
-![alt-text](/images/555_timer1.svg)
+![equation](/images/555_timer8.svg)
 
 This can now be solved for so general values, such as this time it takes the capacitor to reach 1/3 and 2/3 supply voltage. 
 >Vc = 1/3 Vs
