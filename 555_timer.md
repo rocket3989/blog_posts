@@ -128,7 +128,7 @@ Using this rule, comparators can be used to compare analog voltages and output a
 
 When the Signal is greater than the threshold voltage, the output becomes a logical high, and when it is not, it defaults to logic low.
 
-
+![equation](/images/555_timer_pic7.svg)
 {comparator.graph}
 
 3. transistors are the drivers of all computing devices, allowing logical switch operations to be done quickly, and on a small scale. 
