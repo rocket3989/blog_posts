@@ -79,6 +79,82 @@ This can now be solved for some general values, such as this time it takes the c
 
 So a capacitor charging through a resistor will charge to one third of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is a consistant and measurable process. Applying the above manipulation to two thirds supply voltage,
 
+![equation](/images/555_timer13.svg)
+
+![equation](/images/555_timer14.svg)
+
+![equation](/images/555_timer15.svg)
+
+
+Discharging a capacitor follows a similar pattern as charging, with this circuit being considered instead
+
+![equation](/images/555_timer_pic3.svg)
+
+The diffential equation works out to be 
+
+![equation](/images/555_timer16.svg)
+
+with boundary condition `Vc = Vs at t=0`, leading to 
+
+![equation](/images/555_timer17.svg)
+
+which is a reflection across 1/2 Vs from the charging equation, meaning that the derived values for charge and discharge are simply opposites,
+
+![equation](/images/555_timer18.svg)
+
+![equation](/images/555_timer19.svg)
+
+----
+
+## Comparator
+
+Now that we have gone through the nessacary passive components, it is time to analyze the active section of the chip. 
+The comparator is a special type of op amp, wih its charecteristics choosen to act fully in the saturation region. 
+The theory and application of the op amp is too much for this post, so instead it will only cover comparators.
+The comparator has 2 inputs, 2 voltage sources and one output
+
+![equation](/images/555_timer_pic4.svg)
+
+The output of the comparator follows a simple rule: if the negative input is greater than the positive, the negative voltage source is passed to the output
+in the opposite case, The positive voltage input is passed to the output.
+
+![equation](/images/555_timer20.svg)
+
+![equation](/images/555_timer21.svg)
+
+Using this rule, comparators can be used to compare analog voltages and output a digital value. One use of a comparator would be too see if an analog voltage is greater than a threshold voltage. This circuit could be used, with the threshold set by a resistor voltage divider.
+
+![equation](/images/555_timer_pic6.svg)
+
+When the Signal is greater than the threshold voltage, the output becomes a logical high, and when it is not, it defaults to logic low.
+
+![equation](/images/555_timer_pic7.svg)
+{comparator.graph}
+
+3. transistors are the drivers of all computing devices, allowing logical switch operations to be done quickly, and on a small scale. 
+{trans.jpeg}
+When current is passed from the base lead to the emmitter lead, it allows a proportional ammount of current to flow through from collector to emmiter.
+This makes a BJT essentially an amplifier of current. This opperation can be used in the "saturation region" where the current flow is all or nothing,
+making the transistor act as a switch in an electronic circuit. In this opperation, transistors drive all of digital electronics.
+There is one "discrete" transistor in the 555 chip, which, at the right time in the timing sequence, will open a path to ground.
+
+5. RS-latch 
+The rs latch is the most basic componant in an sequential logic circuit, that is, a circuit that not only acts on inputs, but on a previous state.
+The latch has two inputs, a reset input and a set input, giving it the name Reset/set latch. The latch has a single bit of memory, which will store the state of the latch
+That state is modified by the inputs. If the set input is triggered, the memory changes to high. reset trigger makes the value low. 
+The whole time, the latch has two outputs, Q and ~Q which reflect the state of the memory of the cell, and are always opposite each other. 
+{Rs data table}
+one way to understand the rs-latch is to imagine a setup with a lightbulb and two switches. One switch turns the lightbulb one, the other turns it off.
+In this setup, the lightbulb is the logical Q output, and the switches represent the R and S inputs. 
+
+Now to assemble the Timer. Staring on one side of the block diagram, 
+
+
+
+
+
+
+
 
 
  
