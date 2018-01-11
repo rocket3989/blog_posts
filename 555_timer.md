@@ -117,7 +117,18 @@ The comparator has 2 inputs, 2 voltage sources and one output
 
 The output of the comparator follows a simple rule: if the negative input is greater than the positive, the negative voltage source is passed to the output
 in the opposite case, The positive voltage input is passed to the output.
-using this rule, compatators can be used to compare analog voltages and output a digital value. 
+
+![equation](/images/555_timer20.svg)
+
+![equation](/images/555_timer21.svg)
+
+Using this rule, comparators can be used to compare analog voltages and output a digital value. One use of a comparator would be too see if an analog voltage is greater than a threshold voltage. This circuit could be used, with the threshold set by a resistor voltage divider.
+
+![equation](/images/555_timer_pic6.svg)
+
+When the Signal is greater than the threshold voltage, the output becomes a logical high, and when it is not, it defaults to logic low.
+
+
 {comparator.graph}
 
 3. transistors are the drivers of all computing devices, allowing logical switch operations to be done quickly, and on a small scale. 
