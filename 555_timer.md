@@ -26,13 +26,15 @@ resistance of the new circuit is
 ![equation](/images/555_timer2.svg)
 
 Now, if we take that knowledge, and the relationship `V=IR`, we can construct the most simple circuit in electronics
-{voltage divider pic}
+
+![equation](/images/555_timer_pic5.svg)
+
 Through the two resistors, a current I will flow, determined by the resistance seen by the voltage source, which we know to be `R1+R2`. Therefore,
 
 
 ![equation](/images/555_timer3.svg)
 
-now we can apply the relationship again to find the voltage potential over R2, and find that 
+now we can apply the relationship again to find the voltage potential over one of the resistors, R2, and find that 
 
 ![equation](/images/555_timer4.svg)
 
@@ -52,7 +54,7 @@ Using this rule, we can breakdown what happens when a capactior charges
 ![capacitor chargine circuit](/images/555_timer_pic2.svg)
 
 
-When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor volatage, represented by IR, and the capacitor voltage, Q/C. These values must sum to 0, so they can be expressed in the following equation
+When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor voltage, represented by  IR, and the capacitor voltage, Q/C. These values must sum to 0, so they can be expressed in the following equation
 
 ![equation](/images/555_timer6.svg)
 
@@ -104,13 +106,16 @@ which is a reflection across 1/2 Vs from the charging equation, meaning that the
 
 ----
 
-3.Comparator
+## Comparator
+
 Now that we have gone through the nessacary passive components, it is time to analyze the active section of the chip. 
-The comparator is a special type of op amp, wih its charetoristics choosen to act fully in the saturation range. 
-The theory and application of the op amp is too much for this post, so instead I will focus on this specific type
+The comparator is a special type of op amp, wih its charecteristics choosen to act fully in the saturation region. 
+The theory and application of the op amp is too much for this post, so instead it will only cover comparators.
 The comparator has 2 inputs, 2 voltage sources and one output
-{comparator.img}
-the output of the comparator follows a simple rule: if the negative input is greater than the positive, the negative voltage source is passed to the output
+
+![equation](/images/555_timer_pic4.svg)
+
+The output of the comparator follows a simple rule: if the negative input is greater than the positive, the negative voltage source is passed to the output
 in the opposite case, The positive voltage input is passed to the output.
 using this rule, compatators can be used to compare analog voltages and output a digital value. 
 {comparator.graph}
