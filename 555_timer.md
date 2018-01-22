@@ -1,9 +1,11 @@
 # 555 Timer
 
+
 The 555 timer is a versatile electronic component, with uses ranging from an oscillator to make a light flash or a speaker buzz, to a schmitt trigger,
 to smooth noisy signals. While the chip can be understood as a macro level, by experimenting with different methods of interfacing passive
 components with this black box, it is much better understood by looking at the internals of the chip and how they react to inputs. In order to 
 understand the chip, first the underlying theory of each internal component, and each accompanying passive element must be understood. 
+
 -------
 
 ## Resistors
