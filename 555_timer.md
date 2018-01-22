@@ -147,10 +147,10 @@ one way to understand the rs-latch is to imagine a setup with a light bulb and t
 In this setup, the lightbulb is the logical Q output, and the switches represent the R and S inputs. 
 Now to assemble the Timer. Staring on one side of the block diagram, 
  
-#TK
+# TK
 
-#TK
+# TK
 
-#TK
+# TK
 
-#TK
+# TK
