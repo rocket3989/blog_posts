@@ -49,61 +49,61 @@ Capacitors are the second fundamental passive circuit element. It is a device th
 voltage
 difference across its terminals. The voltage difference between the plates of the capacitor (V) is proportional to the charge on the plates (Q), and the capacitance (C)
 
-![equation](/images/555_timer5.svg)
+![V_c = \frac{Q}{C}](/images/555_timer5.svg "Vc = Q/C")
 
 A fundamental rule in electronics is Kirchhoff's voltage law, which states that the voltages across components in a loop of a circuit must sum to 0.
 Using this rule, we can breakdown what happens when a capacitor charges
 
-![capacitor charging circuit](/images/555_timer_pic2.svg)
+![capacitor charging circuit](/images/555_timer_pic2.svg "capacitor charging circuit")
 
 When the switch is closed, the circuit becomes a loop, with the supply voltage, the resistor voltage, represented by  IR, and the capacitor voltage, Q/C. These values must sum to 0, so they can be expressed in the following equation
 
-![equation](/images/555_timer6.svg)
+![V_s = IR + \frac{Q}{C}](/images/555_timer6.svg "Vs = IR + Q/C")
 
 Current is the rate of charge flow over time, so
 `I = dQ/dT` Which can be substituted into the equation, giving
 
-![equation](/images/555_timer7.svg)
+![V_s =R\frac{dQ}{dT}+\frac{Q}{C}](/images/555_timer7.svg "Vs = R(dQ/dT)+Q/C")
 
 This is first order differential equation, with the initial value of `Q = 0 at t = 0`. solving this, the general solution is 
 
-![equation](/images/555_timer8.svg)
+![V_c = V_s(1-e^\frac{-t}{RC})](/images/555_timer8.svg "Vc = Vs(1-e^(-t/RC))")
 
 This can now be solved for some general values, such as this time it takes the capacitor to reach a third of supply voltage by equating `Vc = 1/3 Vs`
 
-![equation](/images/555_timer9.svg)
+![V_c=\frac{1}{3}V_s](/images/555_timer9.svg "Vc = 1/3Vs")
 
-![equation](/images/555_timer10.svg)
+![\frac{1}{3} = (1-e^\frac{-t}{RC})](/images/555_timer10.svg "1/3 = 1-e^(-t/RC)")
 
-![equation](/images/555_timer11.svg)
+![\frac{-t}{RC}=\ln(\frac{2}{3})](/images/555_timer11.svg "-t/RC = ln(2/3)")
 
-![equation](/images/555_timer12.svg)
+![t \approx .4RC](/images/555_timer12.svg "t ~= .4RC")
 
 So a capacitor charging through a resistor will charge to one third of the supply voltage in .4 times the constant RC. This value, RC, is common in electronics with timing circuitry because the charging and discharging of a capacitor is a consistent and measurable process. Applying the above manipulation to two thirds supply voltage,
 
-![equation](/images/555_timer13.svg)
+![V_c=\frac{2}{3}V_s](images/555_timer13.svg "Vc = 2/3Vs")
 
-![equation](/images/555_timer14.svg)
+![\frac{-t}{RC} = \ln(\frac{1}{3})](/images/555_timer14.svg "-t/RC = ln(1/3)")
 
-![equation](/images/555_timer15.svg)
+![t\approx 1.1RC](/images/555_timer15.svg "t ~= 1.1RC")
 
 Discharging a capacitor follows a similar pattern as charging, with this circuit being considered instead
 
-![equation](/images/555_timer_pic3.svg)
+![Capacitor discharge circuit](/images/555_timer_pic3.svg "Capacitor discharge circuit")
 
 The differential equation works out to be 
 
-![equation](/images/555_timer16.svg)
+![R\frac{dQ}{dT} =\frac{Q}{C}](/images/555_timer16.svg "R(dQ/dT) = Q/C")
 
 with boundary condition `Vc = Vs at t=0`, leading to 
 
-![equation](/images/555_timer17.svg)
+![V_c = V_s e^\frac{-t}{RC}](/images/555_timer17.svg "Vc = Vs e^(-t/RC)")
 
 which is a reflection across 1/2 Vs from the charging equation, meaning that the derived values for charge and discharge are simply opposites,
 
-![equation](/images/555_timer18.svg)
+![V_c =\frac{1}{3}V_s \rightarrow t \approx 1.1RC](/images/555_timer18.svg "Vc = 1/3Vs implies t ~= 1.1RC")
 
-![equation](/images/555_timer19.svg)
+![V_c =\frac{2}{3}V_s \rightarrow t \approx .4RC](/images/555_timer19.svg "Vc = 2/3Vs implies t ~= .4RC")
 
 ----
 
