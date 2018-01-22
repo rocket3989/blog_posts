@@ -19,25 +19,25 @@ This equation relates three fundamental concepts in electronics: Voltage- the po
 Current- the rate at which charge flows, and Resistance- the load that charge is pushed through. Resistors can be combined to change how they
 influence a circuit. One such combination is series resistance
 
-![equation](/images/555_timer_pic1.svg)
+![Series Resistors](/images/555_timer_pic1.svg "Two resistors placed in series")
 
 when resistors are connected one after another like this, their resistances are combined by adding them together. In this case, the equivalent 
 resistance of the new circuit is 
 
-![equation](/images/555_timer2.svg)
+![R = R_1 + R_2](/images/555_timer2.svg "R = R1 + R2")
 
 Now, if we take that knowledge, and the relationship `V=IR`, we can construct the most simple circuit in electronics
 
-![equation](/images/555_timer_pic5.svg)
+![Voltage source powering two series resistors](/images/555_timer_pic5.svg "Voltage source powering two series resistors")
 
 Through the two resistors, a current I will flow, determined by the resistance seen by the voltage source, which we know to be `R1+R2`. 
 Therefore,
 
-![equation](/images/555_timer3.svg)
+![I = \frac{V}{R_1+R_2}](/images/555_timer3.svg "I = V/(R1+R2)")
 
 now we can apply the relationship again to find the voltage potential over one of the resistors, R2, and find that 
 
-![equation](/images/555_timer4.svg)
+![V_(R2) = V\frac{R_2}{R_1+R_2}](/images/555_timer4.svg "VR2 = V(R2/R1+R2)")
 
 Now we have created a voltage divider! The voltage seen by R2 will be proportional to the two resistor values, and if they are equal, it will be 1/2 the supply voltage
 
